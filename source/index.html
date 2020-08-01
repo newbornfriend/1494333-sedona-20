@@ -6,8 +6,8 @@
   </head>
   <body class="page__body">
   	<header class="page-header">
-  		<a class="page-header__logo">
-  			<img src="https://via.placeholder.com/150x150">
+  		<a class="page-header__logo" >
+  			<img src="https://via.placeholder.com/150x150" alt="Седона__лого">
   		</a>
   		<nav class="main-nav">
   			<button class="main-nav__toggle" type="button">
@@ -26,7 +26,7 @@
   					</a>
   				</li>
   				<li class="site-list__item">
-  					<a href="phorm.html">
+  					<a href="form.html">
   						Форма отзыва
   					</a>
   				</li>
@@ -38,69 +38,63 @@
   				</ul>
   			</div>
   		</nav>
-  		  <div class="page-header__promo--big">
-    		<img src="https://via.placeholder.com/150x150">
+  		  <div class="page-header__promo page-header__promo--big">
+    		<img src="https://via.placeholder.com/150x150" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
     	  </div>
   	  </header>
       <main class="page-main">
     	<div class="page-main__wrapper">
-    		<h1>Седона — небольшой  городок в Аризоне,  заслуживающий большего!</h1>
-    		<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</h2>
+    		<h1 class="page-main__text page-main__text--bold">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+    		<p class="page-main__text page-main__text--normal">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
     		<section class="features">
-    		<ul class="features__list">
+    		<ol class="features__list">
     			<li class="features__item">
     				<h3 class="features__motto">
     					Настоящий городок
     				</h3>
     				<p class="features__description">
-    					-№1-<br>
     					Седона не аттракцион для туристов, там течет своя жизнь
     				</p>
-    				<div class="features__item--img">
-    					<img src="https://via.placeholder.com/150x150">
+    				<div class="features__img">
+    					<img src="https://via.placeholder.com/150x150" alt="Вид города Седона">
     				</div>
-    				<dl class="bonus-list">
-    					<div class="bonus-item">
-    						<div class="bonus-item__logo">
-    							<img src="https://via.placeholder.com/150x150">
+    				<ul class="bonus-list">
+    					<li class="bonus-item">
+              	<div class="bonus-item__icon bonus-item__icon--house"></div>
+    						<div class="bonus-item__name">
+    							<p class="bonus-item__text bonus-item__text--bold">Жилье</p>
     						</div>
-    						<dt class="bonus-item__name">
-    							Жилье
-    						</dt>
-    						<dd class="bonus-item__description">
-    							Рекомендуем пожить в настоящем мотеле, все как в кино!
-    						</dd>
-    					</div>
-    					<div class="bonus-item">
-    						<div class="bonus-item__logo">
-    							<img src="https://via.placeholder.com/150x150">
+    						<div class="bonus-item__description">
+    							<p class="bonus-item__text bonus-item__text--normal">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
     						</div>
-    						<dt class="bonus-item__name">
-    							Сувениры
-    						</dt>
-    						<dd class="bonus-item__description">
-    							Не только китайского, но и местного производства!
-    						</dd>
-    					</div>
-    					<div class="bonus-item">
-    						<div class="bonus-item__logo">
-    							<img src="https://via.placeholder.com/150x150">
+              </li>
+    					
+              <li class="bonus-item">
+    						<div class="bonus-item__icon bonus-item__icon--souvenirs"></div>
+    						<div class="bonus-item__name">
+    							<p class="bonus-item__text bonus-item__text--bold">Сувениры</p>
     						</div>
-    						<dt class="bonus-item__name">
-    							Еда
-    						</dt>
-    						<dd class="bonus-item__description">
-    							Всегда заказывайте <em>фирменный бургер</em>>, Вы <em>не</em> разочаруетесь!
-    						</dd>
-    					</div>
-    				</dl>>
+    						<div class="bonus-item__description">
+    							<p class="bonus-item__text bonus-item__text--normal">Не только китайского, но и местного производства!</p>
+    						</div>
+    					</li>
+    					
+              <li class="bonus-item">
+    						<div class="bonus-item__icon bonus-item__icon--food"></div>
+    						<div class="bonus-item__name">
+    							<p class="bonus-item__text bonus-item__text--bold">Еда</p>
+    						</div>
+    						<div class="bonus-item__description">
+    							<p class="bonus-item__text bonus-item__text--normal">Всегда заказывайте <em>фирменный бургер</em>, Вы <em>не</em> разочаруетесь!</p>
+    						</div>
+    					</li>
+    				</ul>
     			</li>
     			<li class="features__item">
     				<h3 class="features__motto">
     					Там есть мост дьявола
     				</h3>
     				<p class="features__description">
-    					-№2-<br>
     					Да, по нему можно пройти! Если вы осмелитесь, конечно
     				</p>
     				<div class="features__item--img">
@@ -112,7 +106,6 @@
     					Небольшая площадь
     				</h3>
     				<p class="features__description">
-    					-№3-<br>
     					Все интересные места находятся очень близко
     				</p>
     			</div>
@@ -121,7 +114,6 @@
     					Красивая дорога
     				</h3>
     				<p class="features__description">
-    					-№4-<br>
     					Ехать в Седону из Лас-Вегаса совсем не скучно!
     				</p>
     			</li>
@@ -130,53 +122,49 @@
     					Мало туристов
     				</h3>
     				<p class="features__number">
-    					-№5-<br>
     					Большинство едет в Гранд каньон и толпится там
     				</p>
     			</li>
-    		</ul>	
+    		</ol>	
     		</section>
     		<section class="booking">
-    			<h1>Заинтересовались?</h1>
-    			<p>Укажите предполагаемые даты  поездки, и мы покажем вам лучшие  предложения гостиниц в Седоне</p>
-    			<button class="booking__button" type="button">
-        		Найти гостинницу
-      		</button>
+    			<h2 class="page-main__text page-main__text--bold">Заинтересовались?</h2>
+    			<p class="page-main__text page-main__text--normal">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    			<button class="booking__button" type="button">Найти гостинницу</button>
     		</section>
     		<section class="map">
-    			<div class="nav-map">
-    				
+    			<div class="map__nav">
+    				<! блок для вставки навигационной карты>
     			</div>
     		</section>
 		</div>
       </main>
   </body>
   <footer class="page-footer">
-  	<div class="hash-tag">
+  	<div class="page-footer__hashtag">
   		<a  href="#">#VISITSEDONA</a>
   	</div>
-  	<div class="page-footer__social">
-  		<ul class="social__list">
+  		<ul class="page-footer__social">
   			<li class="social__item">
   				<a class="social__link social__link--twitter" href="https://twitter.com/sedona">
-  					<img src="https://via.placeholder.com/150x150" alt="Twitter">
+  					<span class="visually-hidden">Мы в Твиттере</span>
   				</a>
   			</li>
   			<li class="social__item">
   				<a class="social__link social__link--facebook" href="https://facebook.com/sedona">
-  					<img src="https://via.placeholder.com/150x150" alt="facebook">
+  					<span class="visually-hidden">Наша страница в Фейсбуке</span>
   				</a>
   			</li>
   			<li class="social__item">
   				<a class="social__link social__link--youtube" href="https://youtube.com/sedona">
-  					<img src="https://via.placeholder.com/150x150" alt="youtube">
+  					<span class="visually-hidden">Мы в Ютьюбе</span>
   				</a>
   			</li>
   		</ul>
   		<div class="page-footer__copyright copyright">
      		<p class="copyright__text">Разработано</p>
-      		<a class="copyright__link" href="https://htmlacademy.ru">
-      			<img src="https://via.placeholder.com/150x150" alt="HTML Academy">
+      	<a class="copyright__link" href="https://htmlacademy.ru">
+      		<img src="https://via.placeholder.com/150x150" alt="HTML Academy">
      		</a>
     	</div>
   	</div>

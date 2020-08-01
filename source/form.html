@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-  		<a class="page-header__logo">
-  			<img src="https://via.placeholder.com/150x150">
+  		<a class="page-header__logo" href="index.html">
+  			<img src="https://via.placeholder.com/150x150" alt="Седона__лого">
   		</a>
   		<nav class="main-nav">
   			<button class="main-nav__toggle" type="button">
@@ -15,7 +15,7 @@
       		</button>
   			<div class="main-nav__wrapper">
   				<ul class="main-nav__list site-list">
-	  				<li class="site-list__item site-list__item--active">
+	  				<li class="site-list__item">
 	  					<a href="index.html">
 	  						Главная
 	  					</a>
@@ -25,7 +25,7 @@
 	  						Фото и видео
 	  					</a>
 	  				</li>
-	  				<li class="site-list__item">
+	  				<li class="site-list__item site-list__item--active">
 	  					<a>
 	  						Форма отзыва
 	  					</a>
@@ -45,33 +45,32 @@
 
   </body>
   <footer class="page-footer">
-  	<div class="hash-tag">
-  		<a  href="#">#VISITSEDONA</a>
-  	</div>
-  	<div class="page-footer__social">
-  		<ul class="social__list">
-  			<li class="social__item">
-  				<a class="social__link social__link--twitter" href="https://twitter.com/sedona">
-  					<img src="https://via.placeholder.com/150x150" alt="Twitter">
-  				</a>
-  			</li>
-  			<li class="social__item">
-  				<a class="social__link social__link--facebook" href="https://facebook.com/sedona">
-  					<img src="https://via.placeholder.com/150x150" alt="facebook">
-  				</a>
-  			</li>
-  			<li class="social__item">
-  				<a class="social__link social__link--youtube" href="https://youtube.com/sedona">
-  					<img src="https://via.placeholder.com/150x150" alt="youtube">
-  				</a>
-  			</li>
-  		</ul>
-  		<div class="page-footer__copyright copyright">
-     		<p class="copyright__text">Разработано</p>
-      		<a class="copyright__link" href="https://htmlacademy.ru">
-      			<img src="https://via.placeholder.com/150x150" alt="HTML Academy">
-     		</a>
-    	</div>
-  	</div>
+    <div class="page-footer__hashtag">
+      <a  href="#">#VISITSEDONA</a>
+    </div>
+      <ul class="page-footer__social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/sedona">
+            <span class="visually-hidden">Мы в Твиттере</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://facebook.com/sedona">
+            <span class="visually-hidden">Наша страница в Фейсбуке</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://youtube.com/sedona">
+            <span class="visually-hidden">Мы в Ютьюбе</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru">
+          <img src="https://via.placeholder.com/150x150" alt="HTML Academy">
+        </a>
+      </div>
+    </div>
   </footer>
 </html>
