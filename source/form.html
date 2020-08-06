@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -44,6 +44,59 @@
       <img src="https://via.placeholder.com/150x150" alt="Welcome to Sedona">
     </div>
   </header>
+  <main class="page-main">
+    <section class="page-main__feedback">
+      <h1 class="page-main__title">Оставьте свой отзыв</h1>
+      <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="introduce">
+        <p class="page-main__title">Представьтесь:</p>
+        <div class="introduce__item">
+          <label for="name">Имя*:</label>
+          <input type="text" id="name" name="name" placeholder="Петр">
+        </div>
+        <div class="introduce__item">
+          <label for="surname">Фамилия*:</label>
+          <input type="text" id="surname" name="surname" placeholder="Иванов">
+        </div>
+        <div class="introduce__item">
+          <label for="patronymic">Отчество:</label>
+          <input type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <p class="page-main__title">Контактная информация:</p>
+      <div class="contacts__item">
+        <label for="phone-number">Контактный телефон:*</label>
+        <input type="text" id="phone-number" name="phone-number" placeholder="Введите телефон">
+      </div
+      <div class="contacts__item">
+        <label for="e-mail">Электронная почта:*</label>
+        <input type="text" id="e-mail" name="e-mail" placeholder="Введите e-mail">
+      </div
+    </section>
+    <section class="impression">
+      <p><input type="radio" name="impression" value="good" checked>Скорее положительное<p/>
+        <p><input type="radio" name="impression" value="bad">Скорее отрицательное<p/>
+          <p><input type="radio" name="impression" value="neutral">Затрудняюсь ответить<p/>
+    </section>
+    <section class="visited-places">
+      <p class="page-main__title">Посещенные достопримечательности:</p>
+      <form method="post">
+        <p><input type="checkbox" name="place1" value="Мост дьявола" checked>Мост дьявола<p/>
+          <p><input type="checkbox" name="place2" value="Гора-Колокол" checked>Гора-Колокол<p/>
+            <p><input type="checkbox" name="place3" value="Слайд-парк" checked>Слайд-парк<p/>
+              <p><input type="checkbox" name="place4" value="Красные скалы">Красные скалы<p/>
+      </form>
+    </section>
+    <section class="comments">
+      <p class="page-main__title">Опишите свои эмоции:</p>
+      <textarea name="comment" cols="40" rows="3">Опишите подробно все свои восторги</textarea>
+      <div class="comments__button">
+        <input type="submit" value="Отправить отзыв">
+      </div>
+    </section>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__hashtag">
       <a href="#">#VISITSEDONA</a>
