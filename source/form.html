@@ -45,71 +45,76 @@
     </div>
   </header>
   <main class="page-main">
-    <form action="https://echo.htmlacademy.ru">
-      <h1 class="page-main__title">Оставьте свой отзыв</h1>
-      <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <fieldset class="feedback__input">
-        <legend>Представьтесь:</legend>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru">
+      <h1 class="title">Оставьте свой отзыв</h1>
+      <p class="content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <fieldset class="feedback-form__input input">
+        <legend class="input__ledend">Представьтесь:</legend>
         <div>
-          <label class="feedback__subject" for="name">Имя*:</label>
-          <input class="feedback__text" type="text" id="name" name="name" placeholder="Петр" required>
+          <label class="input__subject" for="name">Имя*:</label>
+          <input class="input__content" type="text" id="name" name="name" placeholder="Петр" required>
         </div>
         <div>
-          <label class="feedback__subject" for="surname">Фамилия*:</label>
-          <input class="feedback__text" type="text" id="surname" name="surname" placeholder="Иванов" required>
+          <label class="input__subject" for="surname">Фамилия*:</label>
+          <input class="input__content" type="text" id="surname" name="surname" placeholder="Иванов" required>
         </div>
         <div>
-          <label class="feedback__subject" for="patronymic">Отчество:</label>
-          <input class="feedback__text" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
-        </div>
-      </fieldset>
-      <fieldset class="feedback__input">
-        <legend>Контактная информация:</legend>
-        <div>
-          <label class="feedback__subject" for="phone-number">Контактный телефон:*</label>
-          <input class="feedback__text" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
-        </div>
-        <div>
-          <label class="feedback__subject" for="e-mail">Электронная почта:*</label>
-          <input class="feedback__text" type="e-mail" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
+          <label class="input__subject" for="patronymic">Отчество:</label>
+          <input class="input__content" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
         </div>
       </fieldset>
-      <fieldset class="feedback__radio-button">
-        <legend>Ваше общее впечатление:</legend>
+      <fieldset class="feedback-form__input input">
+        <legend class="input__ledend">Контактная информация:</legend>
+        <div>
+          <label class="input__subject" for="phone-number">Контактный телефон:*</label>
+          <input class="input__content" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
+        </div>
+        <div>
+          <label class="input__subject" for="email">Электронная почта:*</label>
+          <input class="input__content" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+        </div>
+      </fieldset>
+      <fieldset class="feedback-form__radio-button">
+        <legend class="input__ledend">Ваше общее впечатление:</legend>
         <p>
-          <input type="radio" name="impression" value="good" checked>Скорее положительное
+          <input class="input__content" type="radio" id="good" name="impression" value="good" checked>
+          <label class="input__subject" for="good">Скорее положительное</label>
         </p>
         <p>
-          <input type="radio" name="impression" value="bad">Скорее отрицательное
+          <input class="input__content" type="radio" id="bad" name="impression" value="bad">
+          <label class="input__subject" for="bad">Скорее отрицательное</label>
         </p>
         <p>
-          <input type="radio" name="impression" value="neutral">Затрудняюсь ответить
+          <input class="input__content" type="radio" id="neutral" name="impression" value="neutral">
+          <label class="input__subject" for="neutral">Затрудняюсь ответить</label>
         </p>
       </fieldset>
-      <fieldset class="feedback__checkbox">
-        <legend>Посещенные достопримечательности:</legend>
+      <fieldset class="feedback-form__checkbox">
+        <legend class="input__ledend">Посещенные достопримечательности:</legend>
         <p>
-          <input type="checkbox" id="place1" name="place1" value="Мост дьявола" checked>
-          <label for="place1">Мост дьявола</label>
+          <input class="input__content" type="checkbox" id="place1" name="place1" value="Мост дьявола" checked>
+          <label class="input__subject" for="place1">Мост дьявола</label>
         </p>
         <p>
-          <input type="checkbox" id="place2" name="place2" value="Гора-Колокол" checked>
-          <label for="place2">Гора-Колокол</label>
+          <input class="input__content" type="checkbox" id="place2" name="place2" value="Гора-Колокол" checked>
+          <label class="input__subject" for="place2">Гора-Колокол</label>
         </p>
         <p>
-          <input type="checkbox" id="place3" name="place3" value="Слайд-парк" checked>
-          <label for="place3">Слайд-парк</label>
+          <input class="input__content" type="checkbox" id="place3" name="place3" value="Слайд-парк" checked>
+          <label class="input__subject" for="place3">Слайд-парк</label>
         </p>
         <p>
-          <input type="checkbox" id="place4" name="place4" value="Красные скалы">
-          <label for="place4">Красные скалы</label>
+          <input class="input__content" type="checkbox" id="place4" name="place4" value="Красные скалы">
+          <label class="input__subject" for="place4">Красные скалы</label>
         </p>
       </fieldset>
-      <div class="feedback__textarea">
-        <p><label for="comment">Опишите свои эмоции:</label></p>
+      <div class="feedback-form__textarea">
+        <p class="input__ledend">
+          <label class="input__subject" for="comment">Опишите свои эмоции:</label>
+        </p>
         <textarea name="comment" id="comment" cols="40" rows="3">Опишите подробно все свои восторги</textarea>
       </div>
-      <button class="feedback__button" type="submit">Отправить отзыв</button>
+      <button class="feedback-form__button" type="submit">Отправить отзыв</button>
     </form>
   </main>
   <footer class="page-footer">
