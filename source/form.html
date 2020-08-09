@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="https://via.placeholder.com/50x50" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="academy.html">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__promo page-header__promo--small">
+      <img src="https://via.placeholder.com/150x150" alt="Welcome to Sedona">
+    </div>
+  </header>
+  <main class="page-main">
+    <form class="feedback" action="https://echo.htmlacademy.ru">
+      <h1 class="title">Оставьте свой отзыв</h1>
+      <p class="content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <fieldset class="feedback__content">
+        <legend class="feedback__legend">Представьтесь:</legend>
+        <div class="feedback__field field">
+          <label class="field__label" for="name">Имя*:</label>
+          <input class="field__input" type="text" id="name" name="name" placeholder="Петр" required>
+        </div>
+        <div class="feedback__field field">
+          <label class="field__label" for="surname">Фамилия*:</label>
+          <input class="field__input" type="text" id="surname" name="surname" placeholder="Иванов" required>
+        </div>
+        <div class="feedback__field field">
+          <label class="field__label" for="patronymic">Отчество:</label>
+          <input class="field__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+        </div>
+      </fieldset>
+      <fieldset class="feedback__content">
+        <legend class="feedback__legend">Контактная информация:</legend>
+        <div class="feedback__field field">
+          <label class="field__label" for="phone-number">Контактный телефон:*</label>
+          <input class="field__input" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
+        </div>
+        <div class="feedback__field field">
+          <label class="field__label" for="email">Электронная почта:*</label>
+          <input class="field__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+        </div>
+      </fieldset>
+      <fieldset class="feedback__content">
+        <legend class="feedback__legend">Ваше общее впечатление:</legend>
+        <ul class="feedback__radio-list">
+          <li class="feedback__radio radio">
+            <input class="visually-hidden" type="radio" id="good" name="impression" value="good" checked>
+            <label class="radio__label" for="good">Скорее положительное</label>
+          </li>
+          <li class="feedback__radio radio">
+            <input class="visually-hidden" type="radio" id="bad" name="impression" value="bad">
+            <label class="radio__label" for="bad">Скорее отрицательное</label>
+          </li>
+          <li class="feedback__radio radio">
+            <input class="visually-hidden" type="radio" id="neutral" name="impression" value="neutral">
+            <label class="radio__label" for="neutral">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="feedback__content">
+        <legend class="feedback__legend">Посещенные достопримечательности:</legend>
+        <ul class="feedback__check-list">
+          <li class="feedback__check check">
+            <input class="visually-hidden" type="checkbox" id="place1" name="place1" value="Мост дьявола" checked>
+            <label class="check__label" for="place1">Мост дьявола</label>
+          </li>
+          <li class="feedback__check check">
+            <input class="visually-hidden" type="checkbox" id="place2" name="place2" value="Гора-Колокол" checked>
+            <label class="check__label" for="place2">Гора-Колокол</label>
+          </li>
+          <li class="feedback__check check">
+            <input class="visually-hidden" type="checkbox" id="place3" name="place3" value="Слайд-парк" checked>
+            <label class="check__label" for="place3">Слайд-парк</label>
+          </li>
+          <li class="feedback__check check">
+            <input class="visually-hidden" type="checkbox" id="place4" name="place4" value="Красные скалы">
+            <label class="check__label" for="place4">Красные скалы</label>
+          </li>
+      </fieldset>
+      <div class="feedback__content">
+        <label class="feedback__legend" for="comment">Опишите свои эмоции:</label>
+        <textarea class="feedback__textarea" name="comment" id="comment" cols="40" rows="3">Опишите подробно все свои восторги</textarea>
+      </div>
+      <button class="feedback__button" type="submit">Отправить отзыв</button>
+      <p class="content modile-hidden">* ‒ обязательные поля</p>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__hashtag">
+      <a href="#">#VISITSEDONA</a>
+    </div>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://twitter.com/sedona">
+          <span class="visually-hidden">Мы в Твиттере</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://facebook.com/sedona">
+          <span class="visually-hidden">Наша страница в Фейсбуке</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://youtube.com/sedona">
+          <span class="visually-hidden">Мы в Ютьюбе</span>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru">
+        <img src="https://via.placeholder.com/150x150" alt="HTML Academy">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
