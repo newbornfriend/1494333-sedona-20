@@ -50,70 +50,70 @@
       <p class="content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <fieldset class="feedback__content">
         <legend class="feedback__ledend">Представьтесь:</legend>
-        <div class="feedback__content field">
+        <div class="feedback__field field">
           <label class="field__label" for="name">Имя*:</label>
           <input class="field__input" type="text" id="name" name="name" placeholder="Петр" required>
         </div>
-        <div class="feedback__content field">
+        <div class="feedback__field field">
           <label class="field__label" for="surname">Фамилия*:</label>
           <input class="field__input" type="text" id="surname" name="surname" placeholder="Иванов" required>
         </div>
-        <div class="feedback__content field">
+        <div class="feedback__field field">
           <label class="field__label" for="patronymic">Отчество:</label>
           <input class="field__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
         </div>
       </fieldset>
       <fieldset class="feedback__content">
         <legend class="feedback__ledend">Контактная информация:</legend>
-        <div class="feedback__content field">
+        <div class="feedback__field field">
           <label class="field__label" for="phone-number">Контактный телефон:*</label>
           <input class="field__input" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
         </div>
-        <div class="feedback__content field">
+        <div class="feedback__field field">
           <label class="field__label" for="email">Электронная почта:*</label>
           <input class="field__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
         </div>
       </fieldset>
       <fieldset class="feedback__content">
         <legend class="feedback__ledend">Ваше общее впечатление:</legend>
-        <ul class="feedback__content--radio">
-          <li class="feedback__content field">
-            <input class="field__input" type="radio" id="good" name="impression" value="good" checked>
-            <label class="field__label" for="good">Скорее положительное</label>
+        <ul class="feedback__radio-list radio">
+          <li class="radio__item">
+            <input class="visually-hidden" type="radio" id="good" name="impression" value="good" checked>
+            <label class="radio__label" for="good">Скорее положительное</label>
           </li>
-          <li class="feedback__content field">
-            <input class="field__input" type="radio" id="bad" name="impression" value="bad">
-            <label class="field__label" for="bad">Скорее отрицательное</label>
+          <li class="radio__item">
+            <input class="visually-hidden" type="radio" id="bad" name="impression" value="bad">
+            <label class="radio__label" for="bad">Скорее отрицательное</label>
           </li>
-          <li class="feedback__content field">
-            <input class="field__input" type="radio" id="neutral" name="impression" value="neutral">
-            <label class="field__label" for="neutral">Затрудняюсь ответить</label>
+          <li class="radio__item">
+            <input class="visually-hidden" type="radio" id="neutral" name="impression" value="neutral">
+            <label class="radio__label" for="neutral">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="feedback__content">
         <legend class="feedback__ledend">Посещенные достопримечательности:</legend>
-        <ul class="checkbox__list">
-          <li class="checkbox__list-item">
-            <input class="user-data__input" type="checkbox" id="place1" name="place1" value="Мост дьявола" checked>
-            <label class="user-data__label" for="place1">Мост дьявола</label>
+        <ul class="feedback__check-list check">
+          <li class="check__item">
+            <input class="visually-hidden" type="checkbox" id="place1" name="place1" value="Мост дьявола" checked>
+            <label class="check__label" for="place1">Мост дьявола</label>
           </li>
-          <li class="checkbox__list-item">
-            <input class="user-data__input" type="checkbox" id="place2" name="place2" value="Гора-Колокол" checked>
-            <label class="user-data__label" for="place2">Гора-Колокол</label>
+          <li class="check__item">
+            <input class="visually-hidden" type="checkbox" id="place2" name="place2" value="Гора-Колокол" checked>
+            <label class="check__label" for="place2">Гора-Колокол</label>
           </li>
-          <li class="checkbox__list-item">
-            <input class="user-data__input" type="checkbox" id="place3" name="place3" value="Слайд-парк" checked>
-            <label class="user-data__label" for="place3">Слайд-парк</label>
+          <li class="check__item">
+            <input class="visually-hidden" type="checkbox" id="place3" name="place3" value="Слайд-парк" checked>
+            <label class="check__label" for="place3">Слайд-парк</label>
           </li>
-          <li class="checkbox__list-item">
-            <input class="user-data__input" type="checkbox" id="place4" name="place4" value="Красные скалы">
-            <label class="user-data__label" for="place4">Красные скалы</label>
+          <li class="check__item">
+            <input class="visually-hidden" type="checkbox" id="place4" name="place4" value="Красные скалы">
+            <label class="check__label" for="place4">Красные скалы</label>
           </li>
       </fieldset>
-      <div class="feedback__textarea user-data">
-        <label class="user-data__label" for="comment">Опишите свои эмоции:</label>
-        <textarea class="user-data__input" name="comment" id="comment" cols="40" rows="3">Опишите подробно все свои восторги</textarea>
+      <div class="feedback__content">
+        <label class="feedback__ledend" for="comment">Опишите свои эмоции:</label>
+        <textarea class="feedback__content field" name="comment" id="comment" cols="40" rows="3">Опишите подробно все свои восторги</textarea>
       </div>
       <button class="feedback__button" type="submit">Отправить отзыв</button>
       <p class="content modile-hidden">* ‒ обязательные поля</p>
