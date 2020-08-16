@@ -13,8 +13,9 @@
 }
 
 .field__input {
-  background-color: #f2f2f2;
-  border-color: @white;
+  outline: none;
+  background-color: @field;
+  border: 3px solid @field;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -26,8 +27,10 @@
 
 .field__input:hover {
   background-color: #e5e5e5;
+  border: 3px solid #e5e5e5;
 }
 
-.field__input:active {
+.field__input:focus {
   background-color: @white;
+  border: 3px solid #e5e5e5;
 }

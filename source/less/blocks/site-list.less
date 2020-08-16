@@ -9,23 +9,27 @@
   border: @white;
 }
 
+.site-list__item--active li {
+  background-color: red;
+}
+
 .site-list__item li {
-  background: #81b3d2;
+  background-color: @blue;
 }
 
 .site-list__item a {
-  background: @blue;
+  background-color: @blue;
   color: @white;
   text-decoration: none;
   padding: 9px 40px;
   border-bottom: 1px solid #81b6d2;
-}
 
-.site-list__item a:hover {
-  background-color: @blue-hover;
-}
+  &:hover {
+    background-color: @blue-hover;
+  }
 
-.site-list__item a:active {
-  color: lighten(@blue-down, 20%);
-  background-color: @blue-down;
+  &:active {
+    color: lighten(@blue-down, 20%);
+    background-color: @blue-down;
+  }
 }
