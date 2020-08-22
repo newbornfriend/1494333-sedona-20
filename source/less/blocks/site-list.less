@@ -9,20 +9,10 @@
   border: @white;
 }
 
-.site-list__item--active li {
-  background-color: red;
-}
 
-.site-list__item li {
-  background-color: @blue;
-}
 
-.site-list__item a {
+.site-list__item {
   background-color: @blue;
-  color: @white;
-  text-decoration: none;
-  padding: 9px 40px;
-  border-bottom: 1px solid #81b6d2;
 
   &:hover {
     background-color: @blue-hover;
@@ -31,5 +21,20 @@
   &:active {
     color: lighten(@blue-down, 20%);
     background-color: @blue-down;
+  }
+}
+
+.site-list__item--active {
+  background-color: @blue-hover;
+}
+
+.site-list__item a {
+  color: @white;
+  text-decoration: none;
+  padding: 9px 40px;
+
+  &:active {
+    color: @white;
+    opacity: 0.3;
   }
 }

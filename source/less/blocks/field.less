@@ -2,7 +2,6 @@
   margin: 20px;
 }
 
-
 .field__label {
   font-weight: normal;
   font-size: 14px;
@@ -13,16 +12,33 @@
 }
 
 .field__input {
-  outline: none;
-  background-color: @field;
-  border: 3px solid @field;
+  font-family: @font;
+  color: @black;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: @black;
+  outline: none;
+  background-color: @field;
+  border: 3px solid @field;
   width: 230px;
   height: 58px;
   padding-left: 25px;
+
+  &::-webkit-input-placeholder {
+    color: @black;
+  }
+
+  &::-moz-placeholder {
+    color: @black;
+  }
+
+  &:-moz-placeholder {
+    color: @black;
+  }
+
+  &:-ms-input-placeholder {
+    color: @black;
+  }
 }
 
 .field__input:hover {

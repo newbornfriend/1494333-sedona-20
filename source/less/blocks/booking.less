@@ -24,7 +24,6 @@
 
 .booking__button {
   background-color: @blue;
-  color: @white;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -34,13 +33,17 @@
   text-decoration: none;
   padding: 20px 40px;
   margin: 40px 10px;
+  color: @white;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-down;
+  }
 }
 
-.booking__button:hover {
-  background-color: @blue-hover;
-}
-
-.booking__button:active {
-  background-color: @blue-down;
-  color: lighten(@blue-down, 20%);
+.booking:active a {
+  color: lightsteelblue;
 }
