@@ -10,9 +10,6 @@
 }
 
 .photo__likes {
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 24px;
   font-weight: bold;
   color: @black;
 }
@@ -23,12 +20,11 @@
   color: @gray;
 }
 
-.photo__item button {
-  //position: absolute;
-  //left: 6.25%;
-  //right: 86.56%;
-  // top: 32.99%;
-  // bottom: 66.31%;
+.photo__like-btn {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row wrap;
+  justify-content: space-around;
   height: 30px;
   width: 35px;
   background-image: url("../img/icon-like.svg");
