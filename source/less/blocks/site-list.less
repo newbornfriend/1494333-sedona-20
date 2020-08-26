@@ -1,0 +1,38 @@
+.site-list {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  list-style: none;
+  border: @white;
+}
+
+.site-list__item {
+  background-color: @blue;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    color: lighten(@blue-down, 20%);
+    background-color: @blue-down;
+  }
+}
+
+.site-list__item--active {
+  background-color: @blue-hover;
+}
+
+.site-list__item a {
+  color: @white;
+  text-decoration: none;
+  padding: 9px 40px;
+
+  &:active {
+    color: @white;
+    opacity: 0.3;
+  }
+}

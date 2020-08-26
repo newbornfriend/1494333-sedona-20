@@ -1,0 +1,65 @@
+.field {
+  margin: 20px;
+}
+
+.field__label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @gray;
+  padding-right: 25px;
+}
+
+.field__input {
+  color: @black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  outline: none;
+  background-color: @field;
+  border: 3px solid @field;
+  width: 230px;
+  height: 58px;
+  padding-left: 25px;
+
+  &::-webkit-input-placeholder {
+    color: @black;
+  }
+
+  &::-moz-placeholder {
+    color: @black;
+  }
+
+  &:-moz-placeholder {
+    color: @black;
+  }
+
+  &:-ms-input-placeholder {
+    color: @black;
+  }
+}
+
+.field__input:hover {
+  background-color: #e5e5e5;
+  border: 3px solid #e5e5e5;
+}
+
+.field__input:focus {
+  background-color: @white;
+  border: 3px solid #e5e5e5;
+}
+
+.field__input--phone {
+  height: 58px;
+  width: 230px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+}
+
+.field__input--email {
+  height: 58px;
+  width: 230px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+}
