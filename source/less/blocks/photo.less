@@ -4,12 +4,15 @@
   line-height: 24px;
 }
 
-.photo__title {
-  font-weight: bold;
-  color: @black;
+.photo__item {
+  margin-bottom: 20px;
 }
 
-.photo__likes {
+.photo__item a {
+  background-color: #c5b0af;
+}
+
+.photo__title {
   font-weight: bold;
   color: @black;
 }
@@ -21,13 +24,18 @@
 }
 
 .photo__like-btn {
-  display: flex;
-  align-items: stretch;
-  flex-direction: row wrap;
-  justify-content: space-around;
-  height: 30px;
-  width: 35px;
+  display: inline;
+  vertical-align: middle;
+  padding: 5px;
+  height: 40px;
+  width: 45px;
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.photo__likes {
+  padding-left: 60px;
+  font-weight: bold;
+  color: @black;
 }
