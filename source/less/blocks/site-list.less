@@ -36,3 +36,51 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    background-color: @white;
+  }
+
+  .site-list__item {
+    background-color: @white;
+
+    &:hover {
+      background-color: @white;
+    }
+  }
+
+  .site-list__item a {
+    color: @black;
+
+    &:hover {
+      color: @blue;
+    }
+
+    &:active {
+      color: @black;
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__item--active a {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: #766357;
+      opacity: 0.3;
+    }
+  }
+  //   &:hover {
+  //     color: @white;
+  //   }
+  //
+  //   &:active {
+  //     color: lighten(@blue, 20%);
+  //   }
+  // }
+}

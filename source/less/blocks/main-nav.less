@@ -1,3 +1,15 @@
 .main-nav {
   background-color: @blue;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    background-color: @white;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav button {
+    display: none;
+  }
+}

@@ -1,4 +1,33 @@
 body {
-  background: @white;
+  background-color: @white;
   font-family: @font;
+  margin: 0 auto;
+  min-width: 320px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page__body {
+  width: 280px;
+  padding: 0 40px;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page__body {
+    width: 620px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+}
+//
+// @media (min-width: 1280px) {
+//   .page__body {
+//     width: 960px;
+//     padding: 0 120px;
+//     margin: 0 auto;
+//   }
+// }
