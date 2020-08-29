@@ -3,11 +3,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__wrapper {
-    background-color: @white;
+  .main-nav__list {
+    height: 56px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-    //flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
   }
 
