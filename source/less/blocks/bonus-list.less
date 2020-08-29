@@ -7,6 +7,12 @@
   color: @black;
   padding-left: 69px;
   padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .bonus-list__name {
