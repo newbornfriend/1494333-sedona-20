@@ -1,26 +1,28 @@
 .photo {
-  display: flex;
-  flex-direction: column;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 2fr;
-    //padding: 0 60px;
-    //flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .photo__item:first-child {
-    width: auto;
-    margin: auto;
+  .photo__item--wide img {
+    display: none;
+    width: 648px;
   }
 
   .photo__item--wide {
+    //margin: auto;
     width: 648px;
     height: 400px;
     background-image: url("../img/photo-sunset-tablet@1x.jpg");
@@ -31,22 +33,18 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photo__item:first-child {
-    width: auto;
-    margin: auto;
-  }
-
-  .photo__item:first-child img {
-    //display: none;
+  .photo__item--wide img {
+    display: none;
   }
 
   .photo__item--wide {
+    margin: auto;
     width: 1200px;
     height: 400px;
-    background-image: url("../img/photo-sunset-tablet@1x.jpg");
+    background-image: url("../img/photo-sunset-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    //background-size: cover;
+    background-size: cover;
   }
 }
 
