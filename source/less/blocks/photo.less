@@ -23,7 +23,7 @@
   }
 
   .photo__item {
-    width: 323px;
+    width: 324px;
   }
 
   .photo__item--wide {
@@ -43,7 +43,7 @@
   }
 
   .photo__item {
-    width: 400px;
+    width: 33.33%;
   }
 
   .photo__item--wide {
@@ -93,12 +93,28 @@
 .photo__title {
   font-weight: bold;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 21px;
+  }
 }
 
 .photo__author {
   font-weight: normal;
   text-transform: none;
   color: @gray;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 21px;
+  }
 }
 
 .photo__like-btn button {
