@@ -12,6 +12,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
+    width: auto;
+    padding: 100px 40px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding: 100px 40px 60px;
   }
 }
 
@@ -30,6 +38,22 @@
 
 .bonus-list__item {
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:last-child {
+      order: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
 }
 
 .bonus-list__item--house {
