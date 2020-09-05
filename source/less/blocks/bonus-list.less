@@ -13,8 +13,10 @@
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    width: auto;
-    padding: 100px 40px 60px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    height: 300px;
   }
 
   @media (min-width: @desktop-width) {
@@ -40,7 +42,8 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    width: 200px;
+    padding-top: 60px;
+    width: 180px;
 
     &:nth-child(2) {
       order: 3;

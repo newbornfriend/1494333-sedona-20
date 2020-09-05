@@ -9,27 +9,74 @@
   text-transform: uppercase;
   list-style-position: inside;
   list-style-image: none;
-  width: auto;
+  //width: auto;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    //width: auto;
+  }
 }
 
-.features__item {
+@media (min-width: @tablet-width) {
+  .features__caption {
+    width: 256px;
+    height: 256px;
+    //background-color: @blue;
+  }
+}
+
+.features__list .features__item {
   background-color: @light-gray;
+
+  @media (min-width: @tablet-width) {
+    //display: block;
+    //width: 256px;
+    //height: 256px;
+  }
+}
+
+
+.features__list .features__item--special {
+  background-color: @blue;
+  color: @white;
+
+  &:nth-child(1) {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .features__img {
   background-color: #dcd8dd;
   padding: 0;
+  height: 256px;
+}
+
+.features__img img {
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
 }
 
 .features__bonus-list {
   margin: 0 auto;
-}
-
-.features__item--special {
-  background-color: @blue;
-  color: @white;
 }
 
 .features__motto {
