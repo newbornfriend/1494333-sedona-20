@@ -37,6 +37,13 @@
     &:hover {
       background-color: @white;
     }
+
+    &:nth-child(2)::after {
+      display: table;
+      clear: both;
+      content: "";
+      width: 153px;
+    }
   }
 }
 
@@ -61,6 +68,7 @@
   @media (min-width: @tablet-width) {
     background-color: @white;
     color: @black;
+    padding: 5px 5px;
 
     &:hover {
       color: @blue;
