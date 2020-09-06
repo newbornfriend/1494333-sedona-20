@@ -27,6 +27,16 @@
   line-height: 26px;
   padding: 20px 20px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 167px;
+    padding-right: 167px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 360px;
+    padding-right: 360px;
+  }
 }
 
 .booking__button {
@@ -35,11 +45,11 @@
   font-size: 21px;
   line-height: 26px;
   text-decoration: none;
-  padding: 20px 35px;
+  padding: 15px 47px;
   color: @white;
 
   @media (min-width: @tablet-width) {
-    padding: 20px 180px;
+    padding: 15px 137px;
   }
 
   &:hover {
