@@ -69,11 +69,11 @@
           </fieldset>
           <fieldset class="feedback__content">
             <legend class="feedback__legend">Контактная информация:</legend>
-            <div class="feedback__field field">
+            <div class="feedback__field feedback__content--wide field">
               <label class="field__label" for="phone-number">Контактный телефон:*</label>
               <input class="field__input field__input--phone" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
             </div>
-            <div class="feedback__field field">
+            <div class="feedback__field feedback__content--wide field">
               <label class="field__label" for="email">Электронная почта:*</label>
               <input class="field__input field__input--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
@@ -116,14 +116,14 @@
               </li>
             </ul>
           </fieldset>
-          <div class="feedback__content">
-            <label class="feedback__legend" for="comment">Опишите свои эмоции:</label>
+          <div class="feedback__content feedback__content--textarea">
+            <label class="feedback__legend feedback__content--legend" for="comment">Опишите свои эмоции:</label>
             <textarea class="feedback__textarea" name="comment" id="comment">Опишите подробно все свои восторги</textarea>
           </div>
         </div>
         <div class="feedback__send">
           <button class="feedback__button" type="submit">Отправить отзыв</button>
-          <p class="feedback__content modile-hidden">* ‒ обязательные поля</p>
+          <p class="feedback__remark modile-hidden">* ‒ обязательные поля</p>
         </div>
 
       </form>
