@@ -30,19 +30,19 @@
     background-color: @blue-down;
   }
 
+  &:nth-child(2)::after {
+    display: table;
+    clear: both;
+    content: "";
+    //width: 153px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 153px;
     background-color: @white;
 
     &:hover {
       background-color: @white;
-    }
-
-    &:nth-child(2)::after {
-      display: table;
-      clear: both;
-      content: "";
-      width: 153px;
     }
   }
 }
