@@ -1,7 +1,43 @@
 .content {
-  color: #333333;
+  color: @gray;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
+  padding-top: 10px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 380px;
+    padding-right: 380px;
+    padding-bottom: 67px;
+  }
+}
+
+.content__index {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 358px;
+    padding-right: 358px;
+    padding-bottom: 67px;
+  }
 }

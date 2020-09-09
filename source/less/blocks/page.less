@@ -1,0 +1,23 @@
+.page {
+  height: 100%;
+  background-color: @field;
+  font-family: @font;
+  margin: 0;
+}
+
+.page__wraper {
+  background-color: @white;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+}

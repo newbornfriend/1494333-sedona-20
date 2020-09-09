@@ -1,25 +1,42 @@
 .booking {
   background-color: @white;
   padding-bottom: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  //padding-left: 30px;
+  //padding-right: 30px;
 }
 
 .booking__title {
   color: @black;
-  text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 26px;
+    line-height: 28px;
+  }
 }
 
 .booking__content {
   color: @gray;
   font-weight: normal;
-  text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
   padding: 20px 20px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 167px;
+    padding-right: 167px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 360px;
+    padding-right: 360px;
+  }
 }
 
 .booking__button {
@@ -27,12 +44,13 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
-  padding: 20px 40px;
-  margin: 40px 10px;
+  padding: 15px 47px;
   color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 137px;
+  }
 
   &:hover {
     background-color: @blue-hover;

@@ -1,9 +1,28 @@
 .bonus-list {
+  text-align: left;
   list-style: none;
   text-transform: uppercase;
   font-style: normal;
   background-color: @white;
   color: @black;
+  padding-left: 69px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    //padding: 100px 40px 60px;
+  }
 }
 
 .bonus-list__name {
@@ -21,6 +40,23 @@
 
 .bonus-list__item {
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+    width: 180px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:last-child {
+      order: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
 }
 
 .bonus-list__item--house {
