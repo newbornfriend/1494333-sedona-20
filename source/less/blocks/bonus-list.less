@@ -1,4 +1,5 @@
 .bonus-list {
+  position: relative;
   text-align: left;
   list-style: none;
   text-transform: uppercase;
@@ -16,7 +17,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    height: 300px;
+    height: 320px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,6 +25,11 @@
     //padding: 100px 40px 60px;
   }
 }
+
+// .bonus-list li {
+//   position: relative;
+//   width: 100%;
+// }
 
 .bonus-list__name {
   padding-top: 20px;
@@ -60,13 +66,35 @@
 }
 
 .bonus-list__item--house {
+  //display: block;
+  //position: absolute;
+  //left: -50px;
   background-image: url("../img/icon-house.svg");
+  //background-position: -40px -20px;
+
+  @media (min-width: @tablet-width) {
+    background-position: top;
+    position: relative;
+    top: 60px;
+  }
 }
 
 .bonus-list__item--gift {
   background-image: url("../img/icon-gift.svg");
+
+  @media (min-width: @tablet-width) {
+    background-position: top;
+    position: relative;
+    top: 60px;
+  }
 }
 
 .bonus-list__item--burger {
   background-image: url("../img/icon-burger.svg");
+
+  @media (min-width: @tablet-width) {
+    background-position: top;
+    position: relative;
+    top: 60px;
+  }
 }
